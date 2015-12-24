@@ -22,6 +22,7 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'surround.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'soramugi/auto-ctags.vim'
+NeoBundle 'ctrlpvim/ctrlp.vim'
 
 call neobundle#end()
 
@@ -87,10 +88,15 @@ let g:rsenseHome = '/usr/local/Cellar/rsense/0.3/libexec'
 " --------------------------------
 " NERD Tree
 " --------------------------------
-nnoremap <silent><C-e> :NERDTreeToggle<CR>
+nnoremap <silent><C-t> :NERDTreeToggle<CR>
 
 " --------------------------------
 " auto-ctags
 " --------------------------------
 let g:auto_ctags = 1
+
+" --------------------------------
+" execute ruby
+" --------------------------------
+autocmd BufNewFile,BufRead *.rb nnoremap <C-e> :!ruby %<CR>
 

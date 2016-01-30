@@ -11,8 +11,12 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-" originalrepos on github
-NeoBundle 'altercation/vim-colors-solarized'  " カラースキーム指定 
+" color schemes
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'aereal/vim-color-japanesque'
+NeoBundle 'tomasr/molokai'                  
+
+" plugins 
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler'
@@ -23,10 +27,13 @@ NeoBundle 'surround.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'soramugi/auto-ctags.vim'
 NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'tyru/open-browser.vim'
+NeoBundle 'kannokanno/previm'
 
 call neobundle#end()
 
 " NeoBundleCheckを走らせ起動時に未インストールプラグインをインストール
+
 NeoBundleCheck
 
 " ファイルタイプごとのインデントを有効
@@ -38,7 +45,10 @@ augroup END
 " Solarized (color scheme)
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme molokai
+"colorscheme solarized
+"colorscheme japanesque
+set t_Co=256
 
 " 行番号表示
 set number
@@ -57,6 +67,12 @@ set shiftwidth=4
 
 " タブをスペースに展開
 set expandtab
+
+" カーソル行のハイライト
+set cursorline
+
+" カーソル行の行番号のハイライト
+hi CursorLineNr term=bold   cterm=NONE ctermfg=228 ctermbg=NONE
 
 " ステータスラインを表示
 set laststatus=2
@@ -99,4 +115,10 @@ let g:auto_ctags = 1
 " execute ruby
 " --------------------------------
 autocmd BufNewFile,BufRead *.rb nnoremap <C-e> :!ruby %<CR>
+
+" --------------------------------
+" previm(markdown preview plugin) plugin
+" --------------------------------
+autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+
 

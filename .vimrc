@@ -1,4 +1,4 @@
-" NeoBundle設定
+" NeoBundl設定
 set nocompatible
 filetype plugin indent off
 
@@ -13,8 +13,6 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " color schemes
 NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'aereal/vim-color-japanesque'
-NeoBundle 'tomasr/molokai'                  
 
 " plugins 
 NeoBundle 'Shougo/neocomplete.vim'
@@ -29,26 +27,23 @@ NeoBundle 'soramugi/auto-ctags.vim'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'kannokanno/previm'
+NeoBundle 'ujihisa/unite-colorscheme'
 
 call neobundle#end()
 
 " NeoBundleCheckを走らせ起動時に未インストールプラグインをインストール
-
 NeoBundleCheck
+
+" color scheme
+set background=dark
+colorscheme solarized
+syntax on
 
 " ファイルタイプごとのインデントを有効
 filetype plugin indent on
 augroup vimrc
   autocmd! FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
 augroup END
-
-" Solarized (color scheme)
-syntax enable
-set background=dark
-colorscheme molokai
-"colorscheme solarized
-"colorscheme japanesque
-set t_Co=256
 
 " 行番号表示
 set number
@@ -69,10 +64,10 @@ set shiftwidth=4
 set expandtab
 
 " カーソル行のハイライト
-set cursorline
+"set cursorline
 
 " カーソル行の行番号のハイライト
-hi CursorLineNr term=bold   cterm=NONE ctermfg=228 ctermbg=NONE
+"hi CursorLineNr term=bold   cterm=NONE ctermfg=228 ctermbg=NONE
 
 " ステータスラインを表示
 set laststatus=2
@@ -120,5 +115,4 @@ autocmd BufNewFile,BufRead *.rb nnoremap <C-e> :!ruby %<CR>
 " previm(markdown preview plugin) plugin
 " --------------------------------
 autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
-
 

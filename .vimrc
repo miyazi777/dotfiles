@@ -64,10 +64,10 @@ set shiftwidth=4
 set expandtab
 
 " カーソル行のハイライト
-"set cursorline
+set cursorline
 
 " カーソル行の行番号のハイライト
-"hi CursorLineNr term=bold   cterm=NONE ctermfg=228 ctermbg=NONE
+hi CursorLineNr term=bold   cterm=NONE ctermfg=228 ctermbg=NONE
 
 " ステータスラインを表示
 set laststatus=2

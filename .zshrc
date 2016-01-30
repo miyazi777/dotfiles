@@ -97,5 +97,3 @@ eval "`npm completion`"
 # memo setting
 alias memo='vi ~/memo/memo.md'
 
-# vi setting
-alias vi='vim'

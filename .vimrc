@@ -13,6 +13,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " color schemes
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'tomasr/molokai'
+NeoBundle 'aereal/vim-color-japanesque'
 
 " plugins 
 NeoBundle 'Shougo/neocomplete.vim'
@@ -38,6 +40,11 @@ NeoBundleCheck
 set background=dark
 colorscheme solarized
 syntax on
+"colorscheme molokai 
+"syntax on
+"set background=dark
+"colorscheme japanesque
+"syntax on
 
 " ファイルタイプごとのインデントを有効
 filetype plugin indent on
@@ -64,10 +71,10 @@ set shiftwidth=4
 set expandtab
 
 " カーソル行のハイライト
-set cursorline
+" set cursorline
 
 " カーソル行の行番号のハイライト
-hi CursorLineNr term=bold   cterm=NONE ctermfg=228 ctermbg=NONE
+"hi CursorLineNr term=bold   cterm=NONE ctermfg=228 ctermbg=NONE
 
 " ステータスラインを表示
 set laststatus=2

@@ -85,7 +85,7 @@ function peco-cdr() {
   zle clear-screen
 }
 zle -N peco-cdr
-bindkey '^t' peco-cdr
+bindkey '^f' peco-cdr
 
 
 # nvm setting

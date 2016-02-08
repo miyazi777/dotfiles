@@ -123,3 +123,9 @@ autocmd BufNewFile,BufRead *.rb nnoremap <C-e> :!ruby %<CR>
 " --------------------------------
 autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 
+" --------------------------------
+" unite.vim
+" --------------------------------
+" filer
+nnoremap <silent> ,uf :<C-u>Unite file<CR>
+

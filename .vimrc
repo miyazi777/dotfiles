@@ -19,6 +19,7 @@ NeoBundle 'aereal/vim-color-japanesque'
 " plugins 
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/neoyank.vim'
 NeoBundle 'Shougo/vimfiler'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'supermomonga/neocomplete-rsense.vim'
@@ -126,6 +127,23 @@ autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 " --------------------------------
 " unite.vim
 " --------------------------------
+"  起動時にinsert modeに
+let g:unite_enable_start_insert=1
+" デフォルトアクションはタブで開く
+call unite#custom_default_action('file', 'tabopen')
+" filear && buffer
+nnoremap <silent> ,uu :<C-u>Unite file_rec buffer<CR>
 " filer
-nnoremap <silent> ,uf :<C-u>Unite file<CR>
+nnoremap <silent> ,uf :<C-u>Unite file_rec<CR>
+" buffer
+nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
+" yank
+nnoremap <silent> ,uy :<C-u>Unite history/yank<CR>
+
+
+" --------------------------------
+" customize
+" --------------------------------
+nnoremap <silent> ˚ gt  " alt + k   次のタブへ移動
+nnoremap <silent> ∆ gT  " alt + j   前のタブへ移動
 

@@ -85,7 +85,7 @@ function peco-cdr() {
   zle clear-screen
 }
 zle -N peco-cdr
-bindkey '^f' peco-cdr
+bindkey '^F' peco-cdr
 
 
 # nvm setting
@@ -97,3 +97,14 @@ eval "`npm completion`"
 # memo setting
 alias memo='vi ~/memo/memo.md'
 
+# docker setting
+alias d='docker'
+alias dc='docker-compose'
+alias dm='dinghy'
+alias dm-start='dinghy start && eval "\$(dinghy shellinit)"'
+alias dm-env='eval "\$(dinghy shellinit)"'
+alias d-clean-img='docker rmi $(docker images --filter "dangling=true" -q --no-trunc)'
+alias d-clean-con='docker rm $(docker ps -aq)'
+
+# git setting
+alias g='git'

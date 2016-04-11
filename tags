@@ -4,3 +4,220 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+<Plug>ToggleBackground	iterm2/solarized/vim-colors-solarized/autoload/togglebg.vim	/^inoremap <unique> <script> <Plug>ToggleBackground <ESC><SID>TogBG<ESC>a$/;"	m
+<Plug>ToggleBackground	iterm2/solarized/vim-colors-solarized/autoload/togglebg.vim	/^nnoremap <unique> <script> <Plug>ToggleBackground <SID>TogBG$/;"	m
+<Plug>ToggleBackground	iterm2/solarized/vim-colors-solarized/autoload/togglebg.vim	/^vnoremap <unique> <script> <Plug>ToggleBackground <ESC><SID>TogBG<ESC>gv$/;"	m
+<SID>TogBG	iterm2/solarized/vim-colors-solarized/autoload/togglebg.vim	/^noremap <SID>TogBG  :call <SID>TogBG()<CR>$/;"	m
+ExitNotifyThread	iterm2/solarized/utils/tests/python.py	/^class ExitNotifyThread(Thread):$/;"	c
+GetEnv	iterm2/solarized/utils/tests/java.java	/^public class GetEnv {$/;"	c
+ItemsPerPage	iterm2/solarized/utils/tests/php.php	/^$ItemsPerPage = 20;$/;"	v
+SetOption	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^function! s:SetOption(name,default)$/;"	f
+SolarizedHiTrail	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^augroup SolarizedHiTrail$/;"	a
+SolarizedHiTrail	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^function! s:SolarizedHiTrail()$/;"	f
+SolarizedMenu	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^function! SolarizedMenu()$/;"	f
+SolarizedOptions	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    command SolarizedOptions :call s:SolarizedOptions()$/;"	c
+SolarizedOptions	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^function! s:SolarizedOptions()$/;"	f
+Strict diagonal dominance	iterm2/solarized/utils/tests/tex.tex	/^\\subsection{Strict diagonal-dominance}$/;"	b
+TogBG	iterm2/solarized/vim-colors-solarized/autoload/togglebg.vim	/^function! s:TogBG()$/;"	f
+ToggleBG	iterm2/solarized/vim-colors-solarized/autoload/togglebg.vim	/^    command ToggleBG :call s:TogBG()$/;"	c
+ToggleBackground	iterm2/solarized/vim-colors-solarized/autoload/togglebg.vim	/^function! ToggleBackground()$/;"	f
+ToolBar.togglebg	iterm2/solarized/vim-colors-solarized/autoload/togglebg.vim	/^inoremenu <script> ToolBar.togglebg <ESC><SID>TogBG<ESC>a$/;"	m
+ToolBar.togglebg	iterm2/solarized/vim-colors-solarized/autoload/togglebg.vim	/^nnoremenu <script> ToolBar.togglebg <SID>TogBG$/;"	m
+ToolBar.togglebg	iterm2/solarized/vim-colors-solarized/autoload/togglebg.vim	/^vnoremenu <script> ToolBar.togglebg <ESC><SID>TogBG<ESC>gv$/;"	m
+UNICODE	iterm2/solarized/utils/tests/c.c	/^#define UNICODE$/;"	d	file:
+Window.Toggle\	iterm2/solarized/vim-colors-solarized/autoload/togglebg.vim	/^inoremenu <script> Window.Toggle\\ Background <ESC><SID>TogBG<ESC>a$/;"	m
+Window.Toggle\	iterm2/solarized/vim-colors-solarized/autoload/togglebg.vim	/^nnoremenu <script> Window.Toggle\\ Background <SID>TogBG$/;"	m
+Window.Toggle\	iterm2/solarized/vim-colors-solarized/autoload/togglebg.vim	/^vnoremenu <script> Window.Toggle\\ Background <ESC><SID>TogBG<ESC>gv$/;"	m
+changeHeight	iterm2/solarized/utils/tests/html.html	/^      function changeHeight(h) {$/;"	f
+chkdir	iterm2/solarized/gedit/installer	/^chkdir()$/;"	f
+color-theme-solarized	iterm2/solarized/emacs-colors-solarized/color-theme-solarized.el	/^(defun color-theme-solarized (mode)$/;"	f
+color-theme-solarized-dark	iterm2/solarized/emacs-colors-solarized/color-theme-solarized.el	/^(defun color-theme-solarized-dark ()$/;"	f
+color-theme-solarized-light	iterm2/solarized/emacs-colors-solarized/color-theme-solarized.el	/^(defun color-theme-solarized-light ()$/;"	f
+colors_name	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^let colors_name = "solarized"$/;"	v
+crumbs	iterm2/solarized/utils/tests/php.php	/^$crumbs = array();$/;"	v
+escape_plist_string	iterm2/solarized/textwrangler-bbedit-colors-solarized/bbcolors	/^sub escape_plist_string {$/;"	s
+f_country_language_selected	iterm2/solarized/utils/tests/php.php	/^	$f_country_language_selected = null;$/;"	v
+f_country_language_selected	iterm2/solarized/utils/tests/php.php	/^$f_country_language_selected = camp_session_get('f_language_selected', '');$/;"	v
+f_country_offset	iterm2/solarized/utils/tests/php.php	/^$f_country_offset = camp_session_get('f_country_offset', 0);$/;"	v
+g:loaded_togglebg	iterm2/solarized/vim-colors-solarized/autoload/togglebg.vim	/^let g:loaded_togglebg = 1$/;"	v
+getExitCause	iterm2/solarized/utils/tests/python.py	/^    def getExitCause(self):$/;"	m	class:ExitNotifyThread
+getExitException	iterm2/solarized/utils/tests/python.py	/^    def getExitException(self):$/;"	m	class:ExitNotifyThread
+getExitMessage	iterm2/solarized/utils/tests/python.py	/^    def getExitMessage(self):$/;"	m	class:ExitNotifyThread
+getExitStackTrace	iterm2/solarized/utils/tests/python.py	/^    def getExitStackTrace(self):$/;"	m	class:ExitNotifyThread
+hs_highlight_boolean	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^let hs_highlight_boolean=1$/;"	v
+hs_highlight_delimiters	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^let hs_highlight_delimiters=1$/;"	v
+initialize	iterm2/solarized/utils/tests/ruby.rb	/^def initialize(rbconfig)$/;"	f
+is_editor_running	iterm2/solarized/textwrangler-bbedit-colors-solarized/bbcolors	/^sub is_editor_running {$/;"	s
+languages	iterm2/solarized/utils/tests/php.php	/^$languages = Language::GetLanguages(null, null, null, array(), array(), true);$/;"	v
+list_color_sets	iterm2/solarized/textwrangler-bbedit-colors-solarized/bbcolors	/^sub list_color_sets {$/;"	s
+load_savefile	iterm2/solarized/utils/tests/ruby.rb	/^def load_savefile$/;"	f
+main	iterm2/solarized/utils/tests/c.c	/^int main(int argc, char **argv) {$/;"	f
+main	iterm2/solarized/utils/tests/java.java	/^  public static void main(String[] args) {$/;"	m	class:GetEnv
+numCountries	iterm2/solarized/utils/tests/php.php	/^$numCountries = Country::GetNumCountries($f_country_language_selected);$/;"	v
+open_sets_folder_in_finder	iterm2/solarized/textwrangler-bbedit-colors-solarized/bbcolors	/^sub open_sets_folder_in_finder {$/;"	s
+pager	iterm2/solarized/utils/tests/php.php	/^$pager = new SimplePager($numCountries, $ItemsPerPage, "index.php?");$/;"	v
+profile	iterm2/solarized/utils/tests/python.py	/^                    import cProfile as profile$/;"	i
+profile	iterm2/solarized/utils/tests/python.py	/^                    import profile$/;"	i
+run	iterm2/solarized/utils/tests/python.py	/^    def run(self):$/;"	m	class:ExitNotifyThread
+s:b	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:b           = ""$/;"	v
+s:b	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:b           = ",bold"$/;"	v
+s:back	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^        let s:back    = s:base03$/;"	v
+s:back	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:back        = "NONE"$/;"	v
+s:back	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:back        = s:back$/;"	v
+s:back	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:back        = s:base02$/;"	v
+s:back	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:back        = s:base03$/;"	v
+s:base0	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base0       = "#808080"$/;"	v
+s:base0	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base0       = "#839496"$/;"	v
+s:base0	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base0       = "12"$/;"	v
+s:base0	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base0       = "244"$/;"	v
+s:base0	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base0       = "LightBlue"     " 4*$/;"	v
+s:base0	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base0       = s:base1$/;"	v
+s:base0	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base0       = s:temp00$/;"	v
+s:base00	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base00      = "#585858"$/;"	v
+s:base00	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base00      = "#657b83"$/;"	v
+s:base00	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base00      = "11"$/;"	v
+s:base00	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base00      = "240"$/;"	v
+s:base00	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base00      = "LightYellow"   " 3*$/;"	v
+s:base00	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base00      = s:base0$/;"	v
+s:base01	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base01      = "#4e4e4e"$/;"	v
+s:base01	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base01      = "#586e75"$/;"	v
+s:base01	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base01      = "10"$/;"	v
+s:base01	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base01      = "239"$/;"	v
+s:base01	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base01      = "LightGreen"    " 2*$/;"	v
+s:base01	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base01      = s:base00$/;"	v
+s:base01	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base01      = s:base1$/;"	v
+s:base02	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base02      = "#073642"$/;"	v
+s:base02	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base02      = "#262626"$/;"	v
+s:base02	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base02      = "0"$/;"	v
+s:base02	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base02      = "235"$/;"	v
+s:base02	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base02      = "Black"         " 0$/;"	v
+s:base02	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base02      = s:base2$/;"	v
+s:base03	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base03      = "#002b36"$/;"	v
+s:base03	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base03      = "#1c1c1c"$/;"	v
+s:base03	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base03      = "234"$/;"	v
+s:base03	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base03      = "8"$/;"	v
+s:base03	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base03      = "DarkGray"      " 0*$/;"	v
+s:base03	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base03      = s:base3$/;"	v
+s:base1	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base1       = "#8a8a8a"$/;"	v
+s:base1	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base1       = "#93a1a1"$/;"	v
+s:base1	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base1       = "14"$/;"	v
+s:base1	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base1       = "245"$/;"	v
+s:base1	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base1       = "LightCyan"     " 6*$/;"	v
+s:base1	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base1       = s:base2$/;"	v
+s:base1	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base1       = s:temp01$/;"	v
+s:base2	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base2       = "#d7d7af"$/;"	v
+s:base2	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base2       = "#eee8d5"$/;"	v
+s:base2	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base2       = "187"$/;"	v
+s:base2	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base2       = "7"$/;"	v
+s:base2	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base2       = "LightGray"     " 7$/;"	v
+s:base2	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base2       = s:base3$/;"	v
+s:base2	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base2       = s:temp02$/;"	v
+s:base3	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base3       = "#fdf6e3"$/;"	v
+s:base3	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base3       = "#ffffd7"$/;"	v
+s:base3	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base3       = "15"$/;"	v
+s:base3	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base3       = "230"$/;"	v
+s:base3	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base3       = "White"         " 7*$/;"	v
+s:base3	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:base3       = s:temp03$/;"	v
+s:bb	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:bb          = ""$/;"	v
+s:bb	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:bb          = ",bold"$/;"	v
+s:blue	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:blue        = "#0087ff"$/;"	v
+s:blue	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:blue        = "#268bd2"$/;"	v
+s:blue	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:blue        = "33"$/;"	v
+s:blue	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:blue        = "4"$/;"	v
+s:blue	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:blue        = "DarkBlue"      " 4$/;"	v
+s:bright	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:bright      = "* term=bold cterm=bold"$/;"	v
+s:c	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:c               = ",undercurl"$/;"	v
+s:colorscheme_list	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^let s:colorscheme_list=[$/;"	v
+s:cyan	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:cyan        = "#00afaf"$/;"	v
+s:cyan	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:cyan        = "#2aa198"$/;"	v
+s:cyan	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:cyan        = "37"$/;"	v
+s:cyan	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:cyan        = "6"$/;"	v
+s:cyan	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:cyan        = "DarkCyan"      " 6$/;"	v
+s:defaults_list	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^let s:defaults_list=[$/;"	v
+s:fg_pdef	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^let s:fg_pdef = s:fg_violet$/;"	v
+s:fg_phead	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^let s:fg_phead = s:fg_orange$/;"	v
+s:fg_ptable	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^let s:fg_ptable = s:fg_blue$/;"	v
+s:green	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:green       = "#5f8700"$/;"	v
+s:green	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:green       = "#719e07" "experimental$/;"	v
+s:green	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:green       = "2"$/;"	v
+s:green	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:green       = "64"$/;"	v
+s:green	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:green       = "DarkGreen"     " 2$/;"	v
+s:i	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:i           = ""$/;"	v
+s:i	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:i           = ",italic"$/;"	v
+s:lazycat_list	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^let s:lazycat_list=[$/;"	v
+s:magenta	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:magenta     = "#af005f"$/;"	v
+s:magenta	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:magenta     = "#d33682"$/;"	v
+s:magenta	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:magenta     = "125"$/;"	v
+s:magenta	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:magenta     = "5"$/;"	v
+s:magenta	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:magenta     = "DarkMagenta"   " 5$/;"	v
+s:n	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:n               = "NONE"$/;"	v
+s:none	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:none            = "NONE"$/;"	v
+s:ob	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:ob              = ""$/;"	v
+s:options_list	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^let s:options_list=[$/;"	v
+s:orange	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:orange      = "#cb4b16"$/;"	v
+s:orange	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:orange      = "#d75f00"$/;"	v
+s:orange	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:orange      = "166"$/;"	v
+s:orange	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:orange      = "9"$/;"	v
+s:orange	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:orange      = "LightRed"      " 1*$/;"	v
+s:ou	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:ou              = ""$/;"	v
+s:ou	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:ou          = ",underline"$/;"	v
+s:r	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:r               = ",reverse"$/;"	v
+s:red	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:red         = "#af0000"$/;"	v
+s:red	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:red         = "#dc322f"$/;"	v
+s:red	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:red         = "1"$/;"	v
+s:red	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:red         = "124"$/;"	v
+s:red	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:red         = "DarkRed"       " 1$/;"	v
+s:s	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:s               = ",standout"$/;"	v
+s:solarized_termtrans_default	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:solarized_termtrans_default = 0$/;"	v
+s:solarized_termtrans_default	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:solarized_termtrans_default = 1$/;"	v
+s:sp_back	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_back      = ""$/;"	v
+s:sp_base0	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_base0     = ""$/;"	v
+s:sp_base00	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_base00    = ""$/;"	v
+s:sp_base01	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_base01    = ""$/;"	v
+s:sp_base02	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_base02    = ""$/;"	v
+s:sp_base03	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_base03    = ""$/;"	v
+s:sp_base1	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_base1     = ""$/;"	v
+s:sp_base2	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_base2     = ""$/;"	v
+s:sp_base3	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_base3     = ""$/;"	v
+s:sp_blue	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_blue      = ""$/;"	v
+s:sp_cyan	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_cyan      = ""$/;"	v
+s:sp_green	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_green     = ""$/;"	v
+s:sp_magenta	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_magenta   = ""$/;"	v
+s:sp_none	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_none      = ""$/;"	v
+s:sp_orange	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_orange    = ""$/;"	v
+s:sp_red	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_red       = ""$/;"	v
+s:sp_violet	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_violet    = ""$/;"	v
+s:sp_yellow	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_yellow    = ""$/;"	v
+s:t_none	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:t_none          = "NONE"$/;"	v
+s:temp00	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:temp00      = s:base00$/;"	v
+s:temp01	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:temp01      = s:base01$/;"	v
+s:temp02	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:temp02      = s:base02$/;"	v
+s:temp03	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:temp03      = s:base03$/;"	v
+s:terminal_italic	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^            let s:terminal_italic=1$/;"	v
+s:terminal_italic	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:terminal_italic=0 " terminals will be guilty until proven compatible$/;"	v
+s:terminal_italic	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:terminal_italic=1 " TODO: could refactor to not require this at all$/;"	v
+s:terms_italic	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^let s:terms_italic=[$/;"	v
+s:terms_noitalic	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^let s:terms_noitalic=[$/;"	v
+s:u	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:u           = ""$/;"	v
+s:u	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:u           = ",underline"$/;"	v
+s:violet	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:violet      = "#5f5faf"$/;"	v
+s:violet	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:violet      = "#6c71c4"$/;"	v
+s:violet	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:violet      = "13"$/;"	v
+s:violet	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:violet      = "61"$/;"	v
+s:violet	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:violet      = "LightMagenta"  " 5*$/;"	v
+s:vmode	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:vmode       = "cterm"$/;"	v
+s:vmode	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:vmode       = "gui"$/;"	v
+s:yellow	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:yellow      = "#af8700"$/;"	v
+s:yellow	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:yellow      = "#b58900"$/;"	v
+s:yellow	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:yellow      = "136"$/;"	v
+s:yellow	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:yellow      = "3"$/;"	v
+s:yellow	iterm2/solarized/vim-colors-solarized/colors/solarized.vim	/^    let s:yellow      = "DarkYellow"    " 3$/;"	v
+setExitCause	iterm2/solarized/utils/tests/python.py	/^    def setExitCause(self, cause):$/;"	m	class:ExitNotifyThread
+setExitException	iterm2/solarized/utils/tests/python.py	/^    def setExitException(self, exc):$/;"	m	class:ExitNotifyThread
+setExitMessage	iterm2/solarized/utils/tests/python.py	/^    def setExitMessage(self, msg):$/;"	m	class:ExitNotifyThread
+setExitStackTrace	iterm2/solarized/utils/tests/python.py	/^    def setExitStackTrace(self, st):$/;"	m	class:ExitNotifyThread
+setup_rb_error	iterm2/solarized/utils/tests/ruby.rb	/^def setup_rb_error(msg)$/;"	f
+slice	iterm2/solarized/utils/tests/javascript.js	/^    catch(e){ slice = function (e) { var ret=[]; for (var i=0; e[i]; i++)$/;"	f
+togglebg#map	iterm2/solarized/vim-colors-solarized/autoload/togglebg.vim	/^function! togglebg#map(mapActivation)$/;"	f
+unescape_plist_string	iterm2/solarized/textwrangler-bbedit-colors-solarized/bbcolors	/^sub unescape_plist_string {$/;"	s
+usage	iterm2/solarized/gedit/installer	/^usage()$/;"	f

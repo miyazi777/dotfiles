@@ -87,12 +87,6 @@ function peco-cdr() {
 zle -N peco-cdr
 bindkey '^F' peco-cdr
 
-
-# nvm setting
-export NVM_DIR="/Users/miyajimatakeshi/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-nvm use v5.10.1
-
 # memo setting
 alias memo='vi ~/memo/memo.md'
 

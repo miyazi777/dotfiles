@@ -51,6 +51,7 @@ syntax on
 filetype plugin indent on
 augroup vimrc
   autocmd! FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+  autocmd! FileType rb setlocal shiftwidth=2 tabstop=2 softtabstop=2 
 augroup END
 
 " 行番号表示
@@ -63,7 +64,7 @@ set swapfile
 set backup
 
 " タブを表示する時の幅
-set tabstop=4
+set tabstop=2
 
 " 自動インデントでずれる幅 
 set shiftwidth=4
@@ -91,8 +92,8 @@ let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 if !exists('g:neocomplete#force_omni_input_patterns')
   let g:neocomplete#force_omni_input_patterns = {}
-  endif
-  let g:neocomplete#force_omni_input_patterns.ruby = '[^.*\t]\.\w*\|\h\w*::'
+endif
+let g:neocomplete#force_omni_input_patterns.ruby = '[^.*\t]\.\w*\|\h\w*::'
 
 " --------------------------------
 " Rsense
@@ -130,7 +131,7 @@ autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 "  起動時にinsert modeに
 let g:unite_enable_start_insert=1
 " デフォルトアクションはタブで開く
-call unite#custom#default_action('file', 'tabopen')
+call unite#custom#default_action('file', 'tabswitch')
 " filear && buffer
 nnoremap <silent> ,uu :<C-u>Unite file file_rec buffer<CR>
 " yank

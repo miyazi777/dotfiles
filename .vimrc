@@ -31,6 +31,7 @@ NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'kannokanno/previm'
 NeoBundle 'ujihisa/unite-colorscheme'
+NeoBundle 'dhruvasagar/vim-table-mode'
 
 call neobundle#end()
 
@@ -119,6 +120,11 @@ let g:auto_ctags = 1
 " execute ruby
 " --------------------------------
 autocmd BufNewFile,BufRead *.rb nnoremap <C-e> :!ruby %<CR>
+
+" --------------------------------
+" vim-table-mode plugin
+" --------------------------------
+let g:table_mode_corner = "|"
 
 " --------------------------------
 " previm(markdown preview plugin) plugin

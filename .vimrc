@@ -26,7 +26,8 @@ NeoBundle 'supermomonga/neocomplete-rsense.vim'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'surround.vim'
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'soramugi/auto-ctags.vim'
+" NeoBundle 'soramugi/auto-ctags.vim'
+NeoBundle 'szw/vim-tags' 
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'kannokanno/previm'
@@ -147,6 +148,16 @@ nnoremap <silent> ,uy :<C-u>Unite history/yank<CR>
 " --------------------------------
 " customize
 " --------------------------------
-nnoremap <silent> ˚ gt  " alt + k   次のタブへ移動
-nnoremap <silent> ∆ gT  " alt + j   前のタブへ移動
+nnoremap <silent> <C-l> gt  " ctrl + l   次のタブへ移動
+nnoremap <silent> <C-h> gT  " ctrl + h   前のタブへ移動
+nnoremap <silent> <Tab> gt  " tab + l   次のタブへ移動
+nnoremap <silent> <S-Tab> gT  " tab + h   前のタブへ移動
+"nnoremap <silent> ˚ gt  " alt + k   次のタブへ移動
+"nnoremap <silent> ∆ gT  " alt + j   前のタブへ移動
 
+
+" --------------------------------
+" vim-tags
+" --------------------------------
+let g:vim_tags_project_tags_command = "/usr/local/bin/ctags -R {OPTIONS} {DIRECTORY} 2>/dev/null"
+let g:vim_tags_gems_tags_command = "/usr/local/bin/ctags -R {OPTIONS} `bundle show --paths` 2>/dev/null"

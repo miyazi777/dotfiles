@@ -49,12 +49,19 @@ syntax on
 "colorscheme japanesque
 "syntax on
 
+" タブを表示する時の幅
+set tabstop=4
+" 自動インデントでずれる幅 
+set shiftwidth=4
+" タブをスペースに展開
+set expandtab
+
 " ファイルタイプごとのインデントを有効
 filetype plugin indent on
-augroup vimrc
-  autocmd! FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
-  autocmd! FileType rb setlocal shiftwidth=2 tabstop=2 softtabstop=2 
-augroup END
+"augroup vimrc
+"  autocmd! FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+"  autocmd! FileType rb setlocal shiftwidth=2 tabstop=2 softtabstop=2 
+"augroup END
 
 " 行番号表示
 set number
@@ -64,15 +71,6 @@ set swapfile
 
 " バックアップを有効
 set backup
-
-" タブを表示する時の幅
-set tabstop=2
-
-" 自動インデントでずれる幅 
-set shiftwidth=4
-
-" タブをスペースに展開
-set expandtab
 
 " カーソル行のハイライト
 " set cursorline

@@ -26,13 +26,14 @@ NeoBundle 'supermomonga/neocomplete-rsense.vim'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'surround.vim'
 NeoBundle 'scrooloose/nerdtree'
-" NeoBundle 'soramugi/auto-ctags.vim'
+NeoBundle 'soramugi/auto-ctags.vim'
 NeoBundle 'szw/vim-tags' 
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'kannokanno/previm'
 NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'dhruvasagar/vim-table-mode'
+NeoBundle 'vim-scripts/taglist.vim'
 
 call neobundle#end()
 

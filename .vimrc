@@ -35,6 +35,7 @@ NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'dhruvasagar/vim-table-mode'
 NeoBundle 'vim-scripts/taglist.vim'
 NeoBundle 'Yggdroot/indentLine'
+NeoBundle 'tpope/vim-endwise'
 
 call neobundle#end()
 

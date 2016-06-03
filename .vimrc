@@ -87,6 +87,9 @@ set laststatus=2
 " クリップボードを共用できるようにする
 set clipboard=unnamed
 
+" 保存時に行末のスペースを削除する
+autocmd BufWritePre * :%s/\s\+$//ge
+
 " --------------------------------
 " neocomplete.vim
 " --------------------------------

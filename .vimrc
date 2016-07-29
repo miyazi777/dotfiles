@@ -39,21 +39,23 @@ NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'vim-airline/vim-airline'
+NeoBundle 'vim-airline/vim-airline-themes'
+NeoBundle 'tpope/vim-fugitive'
 
 call neobundle#end()
 
 " NeoBundleCheckを走らせ起動時に未インストールプラグインをインストール
 NeoBundleCheck
 
+" 256色モード
+let &t_Co=256
+
 " color scheme
 set background=dark
 colorscheme solarized
 syntax on
-"colorscheme molokai
-"syntax on
-"set background=dark
-"colorscheme japanesque
-"syntax on
+
 
 " タブを表示する時の幅
 set tabstop=4
@@ -79,10 +81,10 @@ set swapfile
 set backup
 
 " カーソル行のハイライト
-" set cursorline
+set cursorline
 
 " カーソル行の行番号のハイライト
-"hi CursorLineNr term=bold   cterm=NONE ctermfg=228 ctermbg=NONE
+hi CursorLineNr term=bold   cterm=NONE ctermfg=228 ctermbg=NONE
 
 " ステータスラインを表示
 set laststatus=2
@@ -182,10 +184,31 @@ nnoremap <F3> :<C-u>tab stj <C-R>=expand('<cword>')<CR><CR>
 " --------------------------------
 " indentLine
 " --------------------------------
-let g:indentLine_color_term = 239
+let g:indentLine_color_term = 245
 
 " --------------------------------
 " gitgutter
 " --------------------------------
 nnoremap <silent> ,gg :<C-u>GitGutterToggle<CR>
 nnoremap <silent> ,gh :<C-u>GitGutterLineHighlightsToggle<CR>
+
+
+" --------------------------------
+" vim-airline
+" --------------------------------
+let g:Powerline_symbols = 'compatible'
+
+let g:airline_theme = 'solarized'
+let g:airline_powerline_fonts = 1
+"let laststatus=2
+" タブラインのカスタマイズを有効に
+let g:airline#extensions#tabline#enabled = 1
+
+
+" --------------------------------
+" vim-fugitive
+" --------------------------------
+"  ブランチ情報を表示する
+let g:airline#extensions#branch#enabled = 1
+
+

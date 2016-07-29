@@ -4,7 +4,7 @@ filetype plugin indent off
 
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
-endif 
+endif
 
 " NeoBundleを初期化
 call neobundle#begin(expand('~/.vim/bundle/'))
@@ -16,7 +16,7 @@ NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'aereal/vim-color-japanesque'
 
-" plugins 
+" plugins
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neoyank.vim'
@@ -27,7 +27,7 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'surround.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'soramugi/auto-ctags.vim'
-NeoBundle 'szw/vim-tags' 
+NeoBundle 'szw/vim-tags'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'kannokanno/previm'
@@ -36,6 +36,9 @@ NeoBundle 'dhruvasagar/vim-table-mode'
 NeoBundle 'vim-scripts/taglist.vim'
 NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'tpope/vim-endwise'
+NeoBundle 'tpope/vim-endwise'
+NeoBundle 'Shougo/neomru.vim'
+NeoBundle 'airblade/vim-gitgutter'
 
 call neobundle#end()
 
@@ -46,7 +49,7 @@ NeoBundleCheck
 set background=dark
 colorscheme solarized
 syntax on
-"colorscheme molokai 
+"colorscheme molokai
 "syntax on
 "set background=dark
 "colorscheme japanesque
@@ -54,7 +57,7 @@ syntax on
 
 " タブを表示する時の幅
 set tabstop=4
-" 自動インデントでずれる幅 
+" 自動インデントでずれる幅
 set shiftwidth=4
 " タブをスペースに展開
 set expandtab
@@ -63,7 +66,7 @@ set expandtab
 filetype plugin indent on
 "augroup vimrc
 "  autocmd! FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
-"  autocmd! FileType rb setlocal shiftwidth=2 tabstop=2 softtabstop=2 
+"  autocmd! FileType rb setlocal shiftwidth=2 tabstop=2 softtabstop=2
 "augroup END
 
 " 行番号表示
@@ -139,15 +142,20 @@ autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 " --------------------------------
 " unite.vim
 " --------------------------------
+"  画像ファイルを無視する
+let s:unite_ignore_patterns='\.\(gif\|jpe\?g\|png\|webp\)$'
+call unite#custom#source('file_rec', 'ignore_pattern', s:unite_ignore_patterns)
+
 "  起動時にinsert modeに
 let g:unite_enable_start_insert=1
 " デフォルトアクションはタブで開く
 call unite#custom#default_action('file', 'tabswitch')
 " filear && buffer
 nnoremap <silent> ,uu :<C-u>Unite file file_rec buffer<CR>
+" history && buffer
+"nnoremap <silent> ,uh :<C-u>Unite file_mru buffer<CR>
 " yank
 nnoremap <silent> ,uy :<C-u>Unite history/yank<CR>
-
 
 " --------------------------------
 " customize
@@ -166,8 +174,18 @@ nnoremap <silent> <S-Tab> gT  " tab + h   前のタブへ移動
 let g:vim_tags_project_tags_command = "/usr/local/bin/ctags -R {OPTIONS} {DIRECTORY} 2>/dev/null"
 let g:vim_tags_gems_tags_command = "/usr/local/bin/ctags -R {OPTIONS} `bundle show --paths` 2>/dev/null"
 
+" タグファイルのパス
+set tags+=~/.tags
+" F3でタグジャンプする時に新しくタブを開く
+nnoremap <F3> :<C-u>tab stj <C-R>=expand('<cword>')<CR><CR>
+
 " --------------------------------
 " indentLine
 " --------------------------------
 let g:indentLine_color_term = 239
 
+" --------------------------------
+" gitgutter
+" --------------------------------
+nnoremap <silent> ,gg :<C-u>GitGutterToggle<CR>
+nnoremap <silent> ,gh :<C-u>GitGutterLineHighlightsToggle<CR>

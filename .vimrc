@@ -36,12 +36,12 @@ NeoBundle 'dhruvasagar/vim-table-mode'
 NeoBundle 'vim-scripts/taglist.vim'
 NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'tpope/vim-endwise'
-NeoBundle 'tpope/vim-endwise'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'todesking/ruby_hl_lvar.vim'
 
 call neobundle#end()
 
@@ -200,7 +200,6 @@ let g:Powerline_symbols = 'compatible'
 
 let g:airline_theme = 'solarized'
 let g:airline_powerline_fonts = 1
-"let laststatus=2
 " タブラインのカスタマイズを有効に
 let g:airline#extensions#tabline#enabled = 1
 
@@ -211,4 +210,8 @@ let g:airline#extensions#tabline#enabled = 1
 "  ブランチ情報を表示する
 let g:airline#extensions#branch#enabled = 1
 
+" --------------------------------
+" open-browser
+" --------------------------------
+nmap ,oo <Plug>(openbrowser-smart-search)
 

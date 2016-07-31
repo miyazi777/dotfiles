@@ -8,4 +8,5 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" GUI用のフォントを指定
 set guifont=Droid\ Sans\ Mono\ Dotted\ for\ Powerline:h14

@@ -25,7 +25,6 @@ NeoBundle 'Shougo/vimproc'
 NeoBundle 'supermomonga/neocomplete-rsense.vim'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'surround.vim'
-NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'soramugi/auto-ctags.vim'
 NeoBundle 'szw/vim-tags'
 NeoBundle 'ctrlpvim/ctrlp.vim'
@@ -42,6 +41,9 @@ NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'todesking/ruby_hl_lvar.vim'
+NeoBundle 'fatih/vim-go.git'
+NeoBundle 'rking/ag.vim'
+NeoBundle 'vim-scripts/visSum.vim'
 
 call neobundle#end()
 
@@ -95,6 +97,9 @@ set clipboard=unnamed
 " 保存時に行末のスペースを削除する
 autocmd BufWritePre * :%s/\s\+$//ge
 
+" jjで挿入モードから抜ける
+inoremap <silent> jj <ESC>
+
 " --------------------------------
 " neocomplete.vim
 " --------------------------------
@@ -119,7 +124,7 @@ let g:rsenseHome = '/usr/local/Cellar/rsense/0.3/libexec'
 " --------------------------------
 " NERD Tree
 " --------------------------------
-nnoremap <silent><C-t> :NERDTreeToggle<CR>
+" nnoremap <silent><C-t> :NERDTreeToggle<CR>
 
 " --------------------------------
 " auto-ctags
@@ -158,6 +163,18 @@ nnoremap <silent> ,uu :<C-u>Unite file file_rec buffer<CR>
 "nnoremap <silent> ,uh :<C-u>Unite file_mru buffer<CR>
 " yank
 nnoremap <silent> ,uy :<C-u>Unite history/yank<CR>
+" grep検索
+nnoremap <silent> ,g  :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
+" カーソル位置の単語をgrep検索
+nnoremap <silent> ,cg :<C-u>Unite grep:. -buffer-name=search-buffer<CR><C-R><C-W>
+" grep検索結果の再呼出
+nnoremap <silent> ,r  :<C-u>UniteResume search-buffer<CR>
+" unite grep に ag(The Silver Searcher) を使う
+if executable('ag')
+  let g:unite_source_grep_command = 'ag'
+  let g:unite_source_grep_default_opts = '--nogroup --nocolor --column'
+  let g:unite_source_grep_recursive_opt = ''
+endif
 
 " --------------------------------
 " customize
@@ -169,6 +186,7 @@ nnoremap <silent> <S-Tab> gT  " tab + h   前のタブへ移動
 "nnoremap <silent> ˚ gt  " alt + k   次のタブへ移動
 "nnoremap <silent> ∆ gT  " alt + j   前のタブへ移動
 
+inoremap <C-J> <nop>    " 日本語切り替えの為のctrl+Jの無効化
 
 " --------------------------------
 " vim-tags
@@ -215,3 +233,16 @@ let g:airline#extensions#branch#enabled = 1
 " --------------------------------
 nmap ,oo <Plug>(openbrowser-smart-search)
 
+" --------------------------------
+" vim-go setting
+" --------------------------------
+au FileType go nmap ,gr <Plug>(go-run)
+
+" --------------------------------
+" ag.vim setting
+" --------------------------------
+let g:ag_working_path_mode="r"
+
+" --------------------------------
+" visSum.vim setting
+" --------------------------------
